@@ -1,0 +1,60 @@
+body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px 30px;
+        }
+
+        .folha-form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: #2d3a4b;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+            font-weight: 500;
+            align-items: center;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccd6e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #fff;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #3a7afe;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #255ed6;
+        }
