@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Folha de Pagamento</h2>
-        <form id="folhaForm" class="folha-form" action="../aplicações/calculadora.php" method="POST">
+        <form id="folhaForm" class="folha-form" action="/aplicacoes/calculadora.php" method="POST">
             <label for="nome">Nome do Funcionário</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -24,24 +24,7 @@
                 <option value="">Selecione um desconto</option>
                 <option value="inss">INSS</option>
                 <option value="irrf">IRRF</option>
-                <option value="sindical">Contribuição Sindical</option>
-                <option value="faltas">Faltas/Atrasos</option>
-                <option value="emprestimo">Empréstimo Consignado</option>
-                <option value="outros">Outros</option>
             </select>
-
-            <label for="beneficios">Benefícios</label>
-            <select id="beneficios" name="beneficios" required>
-                <option value="">Selecione um benefício</option>
-                <option value="vale_transporte">Vale-Transporte</option>
-                <option value="vale_refeicao">Vale-Refeição</option>
-                <option value="vale_alimentacao">Vale-Alimentação</option>
-                <option value="plano_saude">Plano de Saúde</option>
-                <option value="plano_odontologico">Plano Odontológico</option>
-                <option value="auxilio_creche">Auxílio Creche</option>
-                <option value="outros">Outros</option>
-            </select>
-
             <button type="submit">Gerar Folha</button>
         </form>
     </div>
