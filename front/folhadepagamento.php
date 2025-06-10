@@ -4,7 +4,6 @@ $salario_bruto = $_SESSION['salario_bruto'] ?? 0;
 $tipo_desconto = $_SESSION['tipo_desconto'] ?? '';
 $desconto = $_SESSION['desconto'] ?? 0;
 $salario_liquido = $_SESSION['salario_liquido'] ?? 0;
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

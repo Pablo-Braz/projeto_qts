@@ -1,21 +1,20 @@
 <?php
 
-require_once '../controllers/descontos.php'; // caminho corrigido
-$salario = VerificaDesconto::salarioInformado($salario);
+require_once '../controllers/descontos.php';
 
-class INSS {
-    private $salario;
-    private const desconto = 0.11;
+class INSS implements DescontoStrategy {
+    private $salariobruto;
+    private const DESCONTO = 0.11;
 
-    public function __construct($salario) {
-        $this->salario = floatval($salario);
+    public function __construct($salariobruto) {
+        $this->salariobruto = floatval($salariobruto);
     }
 
-    public function calcularINSS() {
-        return $this->salario * self::desconto;
+    public function calcularDesconto() {
+        return $this->salariobruto * self::DESCONTO;
     }
 
     public function getSalario() {
-        return $this->salario;
+        return $this->salariobruto;
     }
 }

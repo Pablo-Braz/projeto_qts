@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Folha de Pagamento</h2>
-        <form id="folhaForm" class="folha-form" action="/aplicacoes/calculadora.php" method="POST">
+        <form id="folhaForm" class="folha-form" action="/controllers/processa.php" method="POST">
             <label for="nome">Nome do Funcionário</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -17,7 +17,7 @@
             <input type="text" id="cargo" name="cargo" required>
 
             <label for="salario">Salário Bruto (R$)</label>
-            <input type="number" id="salario" name="salario" step="0.01" min="0" required>
+            <input type="number" id="salariobruto" name="salariobruto" step="0.01" min="0" required>
 
             <label for="descontos">Descontos</label>
             <select id="descontos" name="descontos" required>
