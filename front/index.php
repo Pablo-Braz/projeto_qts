@@ -24,6 +24,7 @@
                 <option value="">Selecione um desconto</option>
                 <option value="inss">INSS</option>
                 <option value="irrf">IRRF</option>
+                <option value="fazL">faz L</option>
             </select>
             <button type="submit">Gerar Folha</button>
         </form>

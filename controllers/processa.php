@@ -1,9 +1,10 @@
 <?php
-require_once '../controllers/descontos.php';
-require_once '../controllers/redireciona.php';
-require_once '../aplicacoes/inss.php';
-require_once '../aplicacoes/IRRF.php';
-require_once '../aplicacoes/calculadora.php';
+foreach (glob('../aplicacoes/*.php') as $arquivo) {
+    require_once $arquivo;
+}
+foreach (glob('../controllers/*.php') as $arquivo) {
+    require_once $arquivo;
+}
 
 // Processa os dados enviados pelo formulário
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
