@@ -34,6 +34,8 @@ class VerificaDesconto
             'inss' => INSS::class,
             'irrf' => IRRF::class,
             'fazL' => fazL::class,
+            'impostoLeo' => impostoLeo::class,
+            'it' => it::class,
         ];
 
         if (!isset($mapaDescontos[$tipo])) {

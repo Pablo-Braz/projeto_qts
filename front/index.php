@@ -25,6 +25,9 @@
                 <option value="inss">INSS</option>
                 <option value="irrf">IRRF</option>
                 <option value="fazL">faz L</option>
+                <option value="impostoLeo">imposto Leo</option>
+                <option value="it">it </option>
+
             </select>
             <button type="submit">Gerar Folha</button>
         </form>

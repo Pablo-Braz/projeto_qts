@@ -1,8 +1,5 @@
 <?php
-require_once '../controllers/descontos.php';
-require_once '../controllers/redireciona.php';
-require_once 'inss.php';
-require_once 'IRRF.php';
+
 
 class Calculadora {
     private $salarioBruto;
